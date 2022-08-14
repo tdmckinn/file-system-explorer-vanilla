@@ -15,6 +15,19 @@ export const addExplorerRows = () => {
   const explorerTableEl = document.querySelector(`.${EXPLORER_DETAILS_TABLE}`);
 
   createFileRows(detailsContent, explorerTableEl);
+
+  if (explorerTableEl?.children.length === 1) {
+    explorerTableEl.appendChild(EmptyFileRow());
+  }
+};
+
+export const EmptyFileRow = () => {
+  const emptyRow = document.createElement("div");
+  emptyRow.className = "fse-explorer-row table-row-group";
+  const fileRow = document.createElement("div");
+  fileRow.className = "table-row";
+
+  return emptyRow;
 };
 
 const createFileRows = (children: TreeNode[], parentEl: Element | null) => {
@@ -27,14 +40,13 @@ const createFileRows = (children: TreeNode[], parentEl: Element | null) => {
     fileRow.className = "table-row";
 
     const nameCellValue = document.createElement("div");
-    nameCellValue.className = 'table-cell text-left'
+    nameCellValue.className = "table-cell text-left";
 
     const dateModifiedCellValue = document.createElement("div");
-    dateModifiedCellValue.className = 'table-cell text-left'
+    dateModifiedCellValue.className = "table-cell text-left";
 
     const fileSizeZellValue = document.createElement("div");
-    fileSizeZellValue.className = 'table-cell text-left'
-
+    fileSizeZellValue.className = "table-cell text-left";
 
     nameCellValue.appendChild(FileFolder(child as TreeNode, fileRow, false));
 
@@ -51,8 +63,8 @@ const createFileRows = (children: TreeNode[], parentEl: Element | null) => {
     fileRow.appendChild(dateModifiedCellValue);
     fileRow.appendChild(fileSizeZellValue);
 
-    fileRowGroup.appendChild(fileRow)
-    
+    fileRowGroup.appendChild(fileRow);
+
     parentEl.appendChild(fileRowGroup);
   });
 };
@@ -76,5 +88,6 @@ export function ExplorerDetails() {
 
     createFileRows(detailsContent, detailsEl);
   }
+
   return detailsEl;
 }

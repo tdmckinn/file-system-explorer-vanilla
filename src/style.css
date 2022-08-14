@@ -55,14 +55,12 @@ h1 {
   position: sticky;
   top: 10px;
   margin-bottom: 25px;
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color: #000;
     background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }

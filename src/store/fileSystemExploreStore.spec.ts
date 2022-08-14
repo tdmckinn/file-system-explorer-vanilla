@@ -5,7 +5,6 @@ import { fileSystemExplorerStore } from "./fileSystemExplorerStore";
   it("fetchFileExploreContents()", async () => {
     await fileSystemExplorerStore.fetchFileExploreContents();
 
-
     expect(fileSystemExplorerStore.contents?.children).toBeTruthy()
     expect(fileSystemExplorerStore.contents?.name).toEqual("Files")
     expect(fileSystemExplorerStore.activeFileDir).toEqual("Files")
