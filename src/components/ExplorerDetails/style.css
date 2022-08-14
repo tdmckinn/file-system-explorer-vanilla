@@ -1,0 +1,16 @@
+.fse-explorer-row .fse-folder,
+.fse-file {
+  padding-left: 15px;
+}
+
+.fse-explorer-row:hover {
+  background-color: #e6e6e6;
+}
+
+.fse-explorer-row__header {
+  color: rgb(132, 132, 132);
+}
+
+.fse-explorer-row__header .table-cell {
+  border-bottom: 1px solid var(--primary-grey);
+}

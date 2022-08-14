@@ -1,0 +1,15 @@
+.fse-explorer__panel {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  border-right: 1px solid var(--primary-grey);
+}
+
+.fse-explorer__panel .fse-file {
+  display: none;
+}
+
+.fse-explorer__panel ul {
+  padding: 10px 0;
+  padding-inline-start: 25px;
+}

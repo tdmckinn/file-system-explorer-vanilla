@@ -1,0 +1,52 @@
+{
+  "files": {
+    "type": "folder",
+    "name": "Files",
+    "modified": 1660496724565,
+    "size": 0,
+    "children": [
+      {
+        "type": "folder",
+        "name": "Documents",
+        "modified": 1660496724565,
+        "size": 0,
+        "children": [
+          {
+            "type": "folder",
+            "name": "Git",
+            "modified": 1660496724565
+          },
+          {
+            "type": "file",
+            "name": "ProjectPlan.word",
+            "modified": 1660496724565
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "Images",
+        "modified": 1660496724565,
+        "size": 0
+      },
+      {
+        "type": "folder",
+        "name": "System",
+        "modified": 1660496724565,
+        "size": 0
+      },
+      {
+        "type": "file",
+        "name": "Description.rtf",
+        "modified": 1660496724565,
+        "size": 1
+      },
+      {
+        "type": "file",
+        "name": "Description.txt",
+        "modified":1660496724565,
+        "size": 2
+      }
+    ]
+  }
+}

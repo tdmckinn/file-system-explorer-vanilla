@@ -1,0 +1,50 @@
+.fse-folder,
+.fse-file {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.fse-folder-detail:hover {
+  background-color: #dfdfdf;
+}
+
+.fse-folder-wIcon {
+  display: flex;
+  align-items: center;
+}
+
+.fse-folder-wIcon svg {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.fse-collapse__icon {
+  margin-right: 5px;
+}
+
+.fse-folder-contents {
+  display: none;
+}
+
+.fse-folder-contents.is-visible {
+  display: block;
+}
+
+.fse-file {
+  display: flex;
+  justify-content: center;
+}
+
+.fse-file svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.fse-file span {
+  display: flex;
+  align-items: center;
+}

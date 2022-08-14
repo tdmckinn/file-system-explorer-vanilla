@@ -1,0 +1,6 @@
+.fse-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid var(--primary-grey);
+  min-height: 400px;
+}
