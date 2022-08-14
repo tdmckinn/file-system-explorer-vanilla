@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fileSystemExplorerStore } from "./fileSystemExplorerStore";
+import { fileSystemExplorerStore } from "../store/fileSystemExplorerStore";
 
  describe("FileSystemExploreStore", () => {
   it("fetchFileExploreContents()", async () => {
