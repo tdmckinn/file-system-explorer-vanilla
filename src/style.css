@@ -16,6 +16,11 @@
 
   --white: #ffffff;
   --primary-grey: rgb(188, 184, 184);
+  --selection-blue: #4093cb8f;
+}
+
+::selection {
+  background: var(--selection-blue);
 }
 
 body {

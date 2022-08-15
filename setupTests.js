@@ -4,16 +4,6 @@ import { rest } from "msw";
 import fetch from "node-fetch";
 import data from "./data/explorer-content.json";
 
-const posts = [
-  {
-    userId: 1,
-    id: 1,
-    title: "first post title",
-    body: "first post body",
-  },
-  // ...
-];
-
 export const restHandlers = [
   rest.get("https://long-smoke-b533.kinnon.workers.dev/", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(data));

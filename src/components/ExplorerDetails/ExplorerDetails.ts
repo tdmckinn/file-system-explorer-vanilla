@@ -70,13 +70,13 @@ const createFileRows = (children: TreeNode[], parentEl: Element | null) => {
 };
 
 export function ExplorerDetails() {
-  const detailsEl = document.createElement("div");
-  detailsEl.className = `${EXPLORER_DETAILS_TABLE} table table-auto w-full`;
+  const detailsTableEl = document.createElement("div");
+  detailsTableEl.className = `${EXPLORER_DETAILS_TABLE} table table-auto w-full`;
 
   const detailsContent = fileSystemExplorerStore.getFilesByActiveDir();
 
   if (detailsContent) {
-    detailsEl.innerHTML = `
+    detailsTableEl.innerHTML = `
       <div class="fse-explorer-row__header table-header-group">
         <div class="table-row">
           <div class="table-cell text-left py-3 px-9">Name</div>
@@ -86,8 +86,11 @@ export function ExplorerDetails() {
       </div>
      `;
 
-    createFileRows(detailsContent, detailsEl);
+    createFileRows(detailsContent, detailsTableEl);
   }
 
-  return detailsEl;
+  const explorerDetailsContainer = document.createElement("div");
+  explorerDetailsContainer.appendChild(detailsTableEl)
+
+  return explorerDetailsContainer;
 }

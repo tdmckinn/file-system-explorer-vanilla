@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from "vitest";
-import { FileSystemExplorerApp } from "./components/FileSystemExplorer";
-import { fileSystemExplorerStore } from "./store/fileSystemExplorerStore";
+import { FileSystemExplorerApp } from "./FileSystemExplorer";
+import { fileSystemExplorerStore } from "../store/fileSystemExplorerStore";
 
 describe("FileSystemExploreStore", () => {
   beforeAll(async () => {
@@ -17,7 +17,6 @@ describe("FileSystemExploreStore", () => {
 
     expect(explorePanel).toBeTruthy();
     expect(explorePanel?.children.length).toEqual(1);
-
 
     const detailsTable = document.querySelector(".fse-explorer__details");
     expect(detailsTable).toBeTruthy();

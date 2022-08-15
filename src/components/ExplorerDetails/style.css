@@ -1,15 +1,21 @@
-
-.fse-explorer__details:nth-child(2) .table-cell{
+.fse-explorer__details:nth-child(2) .table-cell {
   padding-top: 15px;
 }
 
 .fse-explorer-row .fse-folder,
 .fse-file {
   padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .fse-explorer-row:hover {
   background-color: #e6e6e6;
+}
+
+
+.fse-explorer-row .fse-folder-detail:hover {
+  background: none;
 }
 
 .fse-explorer-row__header {
